@@ -1,0 +1,2478 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="icon" type="image/x-icon" href="image/logo.png">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/all.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$('.mob_main_menu').hide();
+		$('.mob_sub_menu').hide();
+		$('.mob_peta_menu').hide();
+		$('.search_label').hide();
+		$('.search_label_1').hide();
+		if ($(window).width() < 991) {
+
+			$('.wrapper_links_1').hide();
+			$('.wrapper_links_2').hide();
+			$('.wrapper_links_4').hide();
+
+			$('.products_foo').click(function(){
+				$(this).parent('.footer_1').find('.wrapper_links_1').slideToggle();
+				$(this).parent('.footer_1').find('.plus_icon_1').toggleClass('fa-plus fa-minus');
+			});
+		}
+
+		$('.main_menu_icon').click(function(){
+			$('.mob_main_menu').slideToggle();
+			//$('.mob_main_menu').toggleClass('open_menu close_menu');
+			$('.open_icon').toggleClass('fa-times fa-bars');
+		});
+
+		$('.mob_main_menu>ul>li>a').click(function(){
+			$(this).parent('li').find('.mob_sub_menu').slideToggle();
+		});
+
+		$('.mob_sub_menu>ul>li>a').click(function(){
+			$(this).parent('li').find('.mob_peta_menu').slideToggle();
+		});
+		$('.social_icon').click(function(){
+			$('.search_label').slideToggle();
+		});
+		$('.social_icon_2').click(function(){
+			$('.search_label_1').slideToggle();
+		});
+		
+			$('.menu_image').owlCarousel({
+		 	loop:true,
+				margin:15,
+				nav:true,
+				dots:false,
+				autoplay:true,
+				autoplayTimeout:5000,
+				autoplayHoverPause:true,
+				responsive:{
+					  	0:{
+					      	items:1
+					  	},
+					576:{
+					      	items:2
+					  	},
+					  	768:{
+					        items:3
+					  	},	
+					  	992:{
+					  		items:3
+					  	},
+					  	1200:{
+					        items:3
+					  	}
+				}
+			})
+
+			$('.menu_image_making').owlCarousel({
+		 	loop:true,
+				margin:15,
+				nav:false,
+				dots:false,
+				autoplay:true,
+				autoplayTimeout:5000,
+				autoplayHoverPause:true,
+				responsive:{
+					  	0:{
+					      	items:1
+					  	},
+					  	576:{
+					      	items:2
+					  	},
+					  	768:{
+					          items:2
+					  	}
+				}
+			})
+
+			$('.slider').owlCarousel({
+		    loop:true,
+		    margin:0,
+		    navText:['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
+		    nav:true,
+		    dots:false,
+		    autoplay:true,
+		    autoplayTimeout:5000,
+		    autoplayHoverPause:true,
+		    responsive:{
+		        0:{
+		            items:1
+		        },
+		        600:{
+		            items:1
+		        },
+		        1000:{
+		            items:1
+		        }
+		    }
+		})
+
+		$('.product_theme').owlCarousel({
+	    loop:true,
+	    margin:0,
+	    navText:['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
+	    nav:true,
+	    dots:false,
+	    responsive:{
+	        0:{
+	            items:1
+	        },
+	        576:{
+	            items:2
+	        },
+	        768:{
+	            items:3
+	        },
+	        992:{
+	            items:4
+	        },
+	        1200:{
+	            items:4
+	        }
+	    }
+	})
+		$('.main_wine_1996').owlCarousel({
+	    margin:0,
+	    nav:false,
+	    dots:false,
+	    responsive:{
+	        0:{
+	            items:1,
+	            loop:true,
+	        },
+	        768:{
+	            items:3,
+	            loop:false,
+	            mouseDrag:false,
+	        }
+	    }
+	})
+		$('.client').owlCarousel({
+    loop:true,
+    margin:30,
+    navText:['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
+    nav:false,
+    dots:true,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+		$('.latest_news').owlCarousel({
+    loop:true,
+    margin:30,
+    navText:['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        481:{
+            items:2
+        },
+        1200:{
+            items:3
+        }
+    }
+})
+		$('.brand_image').owlCarousel({
+    loop:true,
+    navText:['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:2
+        },
+        576:{
+            items:3
+        },
+        768:{
+            items:4
+        },
+        992:{
+            items:5
+        }
+    }
+})
+		
+
+		//Fixed Top Header
+	if ($(window).width() > 1199) {
+		$(function(){
+			 var shrinkHeader = 122;
+			  $(window).scroll(function() {
+				var scroll = getCurrentScroll();
+				  if ( scroll >= shrinkHeader ) {
+					   $('.bg_primary_1').addClass('shrink');
+					}
+					else {
+						$('.bg_primary_1').removeClass('shrink');
+					}
+			  });
+			function getCurrentScroll() {
+				return window.pageYOffset || document.documentElement.scrollTop;
+				}
+			});
+
+	}
+			//Scroll To Top
+
+
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 768 || document.documentElement.scrollTop > 768) {
+			    document.getElementById("spnTop").style.display = "block";
+			  } else {
+			    document.getElementById("spnTop").style.display = "none";
+			  }
+			}
+
+			$('#spnTop').on("click", function () {
+			    var percentageToScroll = 10;
+			    var percentage = percentageToScroll / 10;
+			    var height = $(document).scrollTop();
+			    var scrollAmount = height * (1 - percentage);
+
+			    //console.log('scrollAmount: ' + scrollAmount);
+			    $('html,body').animate({
+			        scrollTop: scrollAmount
+			    }, 'slow', function () {
+			        console.log("reached top");
+			    });
+
+			});
+
+
+
+		});
+
+	</script>
+</head>
+<body>
+
+	
+
+	<button id="spnTop"><i class="fas fa-angle-up bottom_to_top"></i></button>
+
+	<header>
+		<div class="bg_primary_1">	
+			<div class="container">
+				
+				<div class="row no-gutters">
+					<div class="col-xl-3 col-lg-3 col-12 left_panel">
+						<img src="image/logo.png">		
+					</div>
+
+					<div class="col-xl-7 col-lg-7 center_panel">
+						<ul class="main_menu">
+							<li><a href="#">Vintage<i class='material-icons main_icon'> arrow_drop_down</i></a>
+								<div class="mega_menu trasform_1">	
+									<div class="grid">
+										<div class="mega_sub"> 
+											<h4>Vintage</h4>
+											<ul>
+												<li><a href="#">Portal Wine</a></li>
+												<li><a href="#">Aerobic</a></li>
+												<li><a href="#">Compound</a></li>
+												<li><a href="#">Aerobic</a></li>
+											</ul>
+											<h4>Calf Machine</h4>
+											<ul>
+												<li><a href="#">Boot Camp</a></li>
+												<li><a href="#">Stubs‎</a></li>
+												<li><a href="#">Making</a></li>
+												<li><a href="#">Stability Ball</a></li>
+											</ul>
+										</div>
+										<div class="mega_sub"> 
+											<h4>Hack Squat</h4>
+											<ul>
+												<li><a href="#">Red wine</a></li>
+												<li><a href="#">Light Lamp</a></li>
+												<li><a href="#">Isometrics</a></li>
+												<li><a href="#">Veritas</a></li>
+											</ul>
+											<h4>Portal Wine</h4>
+											<ul>
+												<li><a href="#">Cool-Down</a></li>
+												<li><a href="#">Aerobic</a></li>
+												<li><a href="#">Veritas</a></li>
+												<li><a href="#">Isometrics</a></li>
+											</ul>
+										</div>
+										<div class="mega_sub"> 
+											<h4>Cocktails</h4>
+											<ul>
+												<li><a href="#">Coca wine</a></li>
+												<li><a href="#">Dumb Bells</a></li>
+												<li><a href="#">Colambre</a></li>
+												<li><a href="#">Red wine</a></li>
+											</ul>
+											<h4>Making</h4>
+											<ul>
+												<li><a href="#">Dumb Bells</a></li>
+												<li><a href="#">Plyometrics</a></li>
+												<li><a href="#">Calf Machine</a></li>
+												<li><a href="#">Coca wine</a></li>
+											</ul>
+										</div>
+										<div class="mega_sub"> 
+											<img src="image/menu-1.png">
+										</div>
+									</div>
+								</div>
+							</li>
+							<li><a href="#">Making<i class='material-icons main_icon'> arrow_drop_down</i></a>
+								<div class="mega_menu trasform_2">	
+									<div class="grid">
+										<div class="mega_sub"> 
+											<h4>Vintage</h4>
+											<ul>
+												<li><a href="#">Portal Wine</a></li>
+												<li><a href="#">Aerobic</a></li>
+												<li><a href="#">Compound</a></li>
+												<li><a href="#">Aerobic</a></li>
+											</ul>
+										</div>
+										<div class="mega_sub"> 
+											<h4>Hack Squat</h4>
+											<ul>
+												<li><a href="#">Red wine</a></li>
+												<li><a href="#">Light Lamp</a></li>
+												<li><a href="#">Isometrics</a></li>
+												<li><a href="#">Veritas</a></li>
+											</ul>
+										</div>
+										<div class="mega_sub"> 
+											<h4>Cocktails</h4>
+											<ul>
+												<li><a href="#">Coca wine</a></li>
+												<li><a href="#">Dumb Bells</a></li>
+												<li><a href="#">Colambre</a></li>
+												<li><a href="#">Red wine</a></li>
+											</ul>
+										</div>
+										<div class="mega_sub"> 
+											<img src="image/menu-2.png">
+										</div>
+									</div>
+								</div>
+							</li>
+							<li><a href="#">Red Wine<i class='material-icons main_icon'> arrow_drop_down</i></a>
+								<div class="mega_menu_3 trasform_3">
+									<div class="owl-carousel owl-theme menu_image">
+										<div class="item">
+				   							<div class="main_menu_image">	
+				   						 		<div class="sub_menu_image">
+				   						 			<div class="menu_image-1">
+				       							 		<img src="image/menu-3-1.jpg">
+				       								</div>
+				       							 	<div class="menu_image_2">
+				       							 		<img src="image/menu-3-6.jpg">
+				       								</div>
+				       							</div>
+				       							<div class="menu_product_dec">
+				       								<div class="product_dec">
+														<a href="#">
+				       										eligendi optiome cumque
+				       									</a>
+				       								</div>
+				       							</div>
+				       							 <div class="spcial_price">
+				       								 <div>
+					       							 	<span  class="price">$20.87</span>
+					       							 	<span class="sale">-8%</span>
+					       							 	<span class="regular_price">$22.68</span>
+					       							 </div>
+				       							</div>
+				       						</div>
+				    					</div>
+				    					<div class="item">
+				   							<div class="main_menu_image">	
+				   						 		<div class="sub_menu_image">
+				   						 			<div class="menu_image-1">
+				       							 		<img src="image/menu-3-1.jpg">
+				       								</div>
+				       							 	<div class="menu_image_2">
+				       							 		<img src="image/menu-3-6.jpg">
+				       								</div>
+				       							</div>
+				       							<div class="menu_product_dec">
+				       								<div class="product_dec">
+														<a href="#">
+				       										eligendi optiome cumque
+				       									</a>
+				       								</div>
+				       							</div>
+				       							 <div class="spcial_price">
+				       								 <div>
+					       							 	<span  class="price">$20.87</span>
+					       							 	<span class="sale">-8%</span>
+					       							 	<span class="regular_price">$22.68</span>
+					       							 </div>
+				       							</div>
+				       						</div>
+				    					</div>
+				    					<div class="item">
+				   							<div class="main_menu_image">	
+				   						 		<div class="sub_menu_image">
+				   						 			<div class="menu_image-1">
+				       							 		<img src="image/menu-3-1.jpg">
+				       								</div>
+				       							 	<div class="menu_image_2">
+				       							 		<img src="image/menu-3-6.jpg">
+				       								</div>
+				       							</div>
+				       							<div class="menu_product_dec">
+				       								<div class="product_dec">
+														<a href="#">
+				       										eligendi optiome cumque
+				       									</a>
+				       								</div>
+				       							</div>
+				       							 <div class="spcial_price">
+				       								 <div>
+					       							 	<span  class="price">$20.87</span>
+					       							 	<span class="sale">-8%</span>
+					       							 	<span class="regular_price">$22.68</span>
+					       							 </div>
+				       							</div>
+				       						</div>
+				    					</div>
+				    					<div class="item">
+				   							<div class="main_menu_image">	
+				   						 		<div class="sub_menu_image">
+				   						 			<div class="menu_image-1">
+				       							 		<img src="image/menu-3-1.jpg">
+				       								</div>
+				       							 	<div class="menu_image_2">
+				       							 		<img src="image/menu-3-6.jpg">
+				       								</div>
+				       							</div>
+				       							<div class="menu_product_dec">
+				       								<div class="product_dec">
+														<a href="#">
+				       										eligendi optiome cumque
+				       									</a>
+				       								</div>
+				       							</div>
+				       							 <div class="spcial_price">
+				       								 <div>
+					       							 	<span  class="price">$20.87</span>
+					       							 	<span class="sale">-8%</span>
+					       							 	<span class="regular_price">$22.68</span>
+					       							 </div>
+				       							</div>
+				       						</div>
+				    					</div>
+				    					<div class="item">
+				   							<div class="main_menu_image">	
+				   						 		<div class="sub_menu_image">
+				   						 			<div class="menu_image-1">
+				       							 		<img src="image/menu-3-1.jpg">
+				       								</div>
+				       							 	<div class="menu_image_2">
+				       							 		<img src="image/menu-3-6.jpg">
+				       								</div>
+				       							</div>
+				       							<div class="menu_product_dec">
+				       								<div class="product_dec">
+														<a href="#">
+				       										eligendi optiome cumque
+				       									</a>
+				       								</div>
+				       							</div>
+				       							 <div class="spcial_price">
+				       								 <div>
+					       							 	<span  class="price">$20.87</span>
+					       							 	<span class="sale">-8%</span>
+					       							 	<span class="regular_price">$22.68</span>
+					       							 </div>
+				       							</div>
+				       						</div>
+				    					</div>
+				    					<div class="item">
+				   							<div class="main_menu_image">	
+				   						 		<div class="sub_menu_image">
+				   						 			<div class="menu_image-1">
+				       							 		<img src="image/menu-3-1.jpg">
+				       								</div>
+				       							 	<div class="menu_image_2">
+				       							 		<img src="image/menu-3-6.jpg">
+				       								</div>
+				       							</div>
+				       							<div class="menu_product_dec">
+				       								<div class="product_dec">
+														<a href="#">
+				       										eligendi optiome cumque
+				       									</a>
+				       								</div>
+				       							</div>
+				       							 <div class="spcial_price">
+				       								 <div>
+					       							 	<span  class="price">$20.87</span>
+					       							 	<span class="sale">-8%</span>
+					       							 	<span class="regular_price">$22.68</span>
+					       							 </div>
+				       							</div>
+				       						</div>
+				    					</div>
+				    					
+				    				</div>
+								</div>
+							</li>
+							<li><a href="#">More<i class='material-icons main_icon'> arrow_drop_down</i></a>
+								<div class="mega_menu_4"> 
+									<div class="grid_3">
+										<ul>
+											<li><a href="#">Coca wine</a></li>
+											<li><a href="#">Dumb Bells</a></li>
+											<li><a href="#">Colambre</a></li>
+											<li><a href="#">Red wine</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-xl-2 col-lg-2 col-12 right_panel">
+								<span class="mob_menu">
+									<div class="main_menu_icon">
+										<i class="fas fa-bars open_icon"></i>
+									</div>
+								</span>
+							<div class="mob_menu_2">
+								<span class="icon_sc"><i class='material-icons social_icon'> search</i></span>
+									<div class="search_label">
+										<input type="text" name="" value="" placeholder="search our catelog" class="text"><i class="fas fa-search social_icon_1"></i>
+									</div>
+						
+								<span class="icon_sc"><i class='material-icons social_icon_2'> person_outline</i></span>
+									<div class="search_label_1">
+										<ul>
+											<li>Sign in</li>
+											<li>Compare (0)</li>
+											<li>Wishlists(0)</li>
+											<span class="langu">Language:</span>
+												<ul>
+													<li>English</li>
+													<li>اللغة العربية</li>
+													<li>Français</li>
+													<li>Italiano</li>
+													<li>Deutsch</li>
+												</ul>
+												<span class="langu">Currency:</span>
+												<ul>
+													<li>EUR €</li>
+													<li>USD $</li>
+												</ul>
+										</ul>
+									</div>
+								<span class="product_count">
+									<span class="cart_product_count">0</span>
+									<span class="icon_sc"><i class='material-icons social_icon_3'> shopping_cart</i></span>
+								</span>
+							</div>
+						
+										<div class="mob_main_menu">
+											<ul>
+												<li><a href="#">Vintage<i class="fas fa-caret-down mob_icon"></i></a>
+													<div class="mob_sub_menu">
+														<div class="mega_sub"> 
+															<div class="mob_h6"><a href="#">Vintage</a></div>
+															<ul>
+																<li><a href="#">Portal Wine</a></li>
+																<li><a href="#">Aerobic</a></li>
+																<li><a href="#">Compound</a></li>
+																<li><a href="#">Aerobic</a></li>
+															</ul>
+															<div class="mob_h6"><a href="#">Calf Machine</a></div>
+															<ul>
+																<li><a href="#">Boot Camp</a></li>
+																<li><a href="#">Stubs‎</a></li>
+																<li><a href="#">Making</a></li>
+																<li><a href="#">Stability Ball</a></li>
+															</ul>
+														</div>
+														<div class="mega_sub"> 
+															<div class="mob_h6"><a href="#">Hack Squat</a></div>
+															<ul>
+																<li><a href="#">Red wine</a></li>
+																<li><a href="#">Light Lamp</a></li>
+																<li><a href="#">Isometrics</a></li>
+																<li><a href="#">Veritas</a></li>
+															</ul>
+															<div class="mob_h6"><a href="#">Portal Wine</a></div>
+															<ul>
+																<li><a href="#">Cool-Down</a></li>
+																<li><a href="#">Aerobic</a></li>
+																<li><a href="#">Veritas</a></li>
+																<li><a href="#">Isometrics</a></li>
+															</ul>
+														</div>
+														<div class="mega_sub"> 
+															<div class="mob_h6"><a href="#">Cocktails</a></div>
+															<ul>
+																<li><a href="#">Coca wine</a></li>
+																<li><a href="#">Dumb Bells</a></li>
+																<li><a href="#">Colambre</a></li>
+																<li><a href="#">Red wine</a></li>
+															</ul>
+															<div class="mob_h6"><a href="#">Making</a></div>
+															<ul>
+																<li><a href="#">Dumb Bells</a></li>
+																<li><a href="#">Plyometrics</a></li>
+																<li><a href="#">Calf Machine</a></li>
+																<li><a href="#">Coca wine</a></li>
+															</ul>
+														</div>
+														<div class="mega_sub"> 
+															<img src="image/menu-1.png">
+														</div>
+													</div>	
+												</li>
+												<li><a href="#">Making <i class="fas fa-caret-down mob_icon"></i></a>
+													<div class="mob_sub_menu">
+														<div class="mega_sub"> 
+															<div class="mob_h6"><a href="#">About us</a></div>
+															<ul>
+																<li><a href="#">Contact us</a></li>
+																<li><a href="#">Best sales</a></li>
+																<li><a href="#">New products</a></li>
+																<li><a href="#">Prices drop</a></li>
+															</ul>
+														</div>
+														<div class="mega_sub"> 
+															<div class="mob_h6"><a href="#">Hack Squat</a></div>
+															<ul>
+																<li><a href="#">Aerobic</a></li>
+																<li><a href="#">Dumb Bells</a></li>
+																<li><a href="#">Coca wine</a></li>
+																<li><a href="#">Stability Ball</a></li>
+															</ul>
+														</div>
+														<div class="mega_sub"> 
+															<div class="mob_h6"><a href="#"> women training</a></div>
+															<ul>
+																<li><a href="#">Squat Rack</a></li>
+																<li><a href="#">Hack Squat</a></li>
+																<li><a href="#">Boot Camp</a></li>
+																<li><a href="#">Red wine</a></li>
+															</ul>
+														</div>
+														<div class="mega_sub mega_sub_1">
+																	<div class="owl-carousel owl-theme menu_image_making">
+																		<div class="item">
+										   						 			<div class="main_menu_image">	
+													   						 	<div class="sub_menu_image">
+													   						 		<div class="menu_image_1">
+													       							 	<img src="image/menu-3-1.jpg">
+													       							</div>
+													       							 <div class="menu_image_2">
+													       							 	<img src="image/menu-3-6.jpg">
+													       							</div>
+													       						</div>
+													       						<div class="product_dec">
+													       							eligendi optiome cumque
+													       						</div>
+													       						<div class="spcial_price">
+													       							 	<div>
+													       							 		<span  class="price">$20.87</span>
+													       							 		<span class="sale">-8%</span>
+													       							 		<span class="regular_price">$22.68</span>
+													       							 	</div>
+													       						</div>
+													       					</div>
+													    				</div>
+													    				<div class="item">
+										   						 			<div class="main_menu_image">	
+													   						 	<div class="sub_menu_image">
+													   						 		<div class="menu_image_1">
+													       							 	<img src="image/menu-3-1.jpg">
+													       							</div>
+													       							 <div class="menu_image_2">
+													       							 	<img src="image/menu-3-6.jpg">
+													       							</div>
+													       						</div>
+													       						<div class="product_dec">
+													       							eligendi optiome cumque
+													       						</div>
+													       						<div class="spcial_price">
+													       							 	<div>
+													       							 		<span  class="price">$20.87</span>
+													       							 		<span class="sale">-8%</span>
+													       							 		<span class="regular_price">$22.68</span>
+													       							 	</div>
+													       						</div>
+													       					</div>
+													    				</div>
+																	</div>
+														</div>
+													</div>
+												</li>
+												<li><a href="#">Red Wine<i class="fas fa-caret-down mob_icon"></i></a>
+													<div class="mob_sub_menu">
+																<div class="owl-carousel owl-theme menu_image">
+																	<div class="item">
+									   						 			<div class="main_menu_image">	
+												   						 	<div class="sub_menu_image">
+												   						 		<div class="menu_image_1">
+												       							 	<img src="image/menu-3-1.jpg">
+												       							</div>
+												       							 <div class="menu_image_2">
+												       							 	<img src="image/menu-3-6.jpg">
+												       							</div>
+												       						</div>
+												       						<div class="product_dec">
+												       							eligendi optiome cumque
+												       						</div>
+												       						<div class="spcial_price">
+												       							 	<div>
+												       							 		<span  class="price">$20.87</span>
+												       							 		<span class="sale">-8%</span>
+												       							 		<span class="regular_price">$22.68</span>
+												       							 	</div>
+												       						</div>
+												       					</div>
+												    				</div>
+												    				<div class="item">
+									   						 			<div class="main_menu_image">	
+												   						 	<div class="sub_menu_image">
+												   						 		<div class="menu_image_1">
+												       							 	<img src="image/menu-3-1.jpg">
+												       							</div>
+												       							 <div class="menu_image_2">
+												       							 	<img src="image/menu-3-6.jpg">
+												       							</div>
+												       						</div>
+												       						<div class="product_dec">
+												       							eligendi optiome cumque
+												       						</div>
+												       						<div class="spcial_price">
+												       							 	<div>
+												       							 		<span  class="price">$20.87</span>
+												       							 		<span class="sale">-8%</span>
+												       							 		<span class="regular_price">$22.68</span>
+												       							 	</div>
+												       						</div>
+												       					</div>
+												    				</div>
+												    				<div class="item">
+									   						 			<div class="main_menu_image">	
+												   						 	<div class="sub_menu_image">
+												   						 		<div class="menu_image_1">
+												       							 	<img src="image/menu-3-1.jpg">
+												       							</div>
+												       							 <div class="menu_image_2">
+												       							 	<img src="image/menu-3-6.jpg">
+												       							</div>
+												       						</div>
+												       						<div class="product_dec">
+												       							eligendi optiome cumque
+												       						</div>
+												       						<div class="spcial_price">
+												       							 	<div>
+												       							 		<span  class="price">$20.87</span>
+												       							 		<span class="sale">-8%</span>
+												       							 		<span class="regular_price">$22.68</span>
+												       							 	</div>
+												       						</div>
+												       					</div>
+												    				</div>
+												    				<div class="item">
+									   						 			<div class="main_menu_image">	
+												   						 	<div class="sub_menu_image">
+												   						 		<div class="menu_image_1">
+												       							 	<img src="image/menu-3-1.jpg">
+												       							</div>
+												       							 <div class="menu_image_2">
+												       							 	<img src="image/menu-3-6.jpg">
+												       							</div>
+												       						</div>
+												       						<div class="product_dec">
+												       							eligendi optiome cumque
+												       						</div>
+												       						<div class="spcial_price">
+												       							 	<div>
+												       							 		<span  class="price">$20.87</span>
+												       							 		<span class="sale">-8%</span>
+												       							 		<span class="regular_price">$22.68</span>
+												       							 	</div>
+												       						</div>
+												       					</div>
+												    				</div>
+												    				<div class="item">
+									   						 			<div class="main_menu_image">	
+												   						 	<div class="sub_menu_image">
+												   						 		<div class="menu_image_1">
+												       							 	<img src="image/menu-3-1.jpg">
+												       							</div>
+												       							 <div class="menu_image_2">
+												       							 	<img src="image/menu-3-6.jpg">
+												       							</div>
+												       						</div>
+												       						<div class="product_dec">
+												       							eligendi optiome cumque
+												       						</div>
+												       						<div class="spcial_price">
+												       							 	<div>
+												       							 		<span  class="price">$20.87</span>
+												       							 		<span class="sale">-8%</span>
+												       							 		<span class="regular_price">$22.68</span>
+												       							 	</div>
+												       						</div>
+												       					</div>
+												    				</div>
+																</div>
+
+													</div>
+												</li>
+												<li><a href="#">My Account</a></li>
+												<li><a href="#">Sitemap</a></li>
+												<li><a href="#">Contact Us</a></li>
+												<li><a href="#">Blog</a></li>
+											</ul>
+											
+										</div>
+
+
+
+					</div>
+
+				</div>
+
+										
+			</div>
+		</div>
+
+										
+										
+								
+								
+
+
+	</header>
+
+<div class="main_menu">
+
+	
+		
+	<div class="owl-carousel owl-theme slider p_70">
+	    <div class="item">
+	        <img src="image/silder-1.jpg">
+	    </div>
+	     <div class="item">
+	        <img src="image/silder-2.jpg">
+	    </div>
+	</div>
+</div>
+
+
+
+<div class="container p_70">
+		<div class="offer">	
+		<div class="row">
+			<div class="col-12 col-sm-4">
+				<div class="image_1 offer_1">
+					<img src="image/wine-1.jpg">
+				</div>
+				<div class="image_1 offer_2">
+					<img src="image/wine-4.jpg">
+				</div>
+			</div>
+			<div class="col-12 col-sm-4">
+				<div class="image_1 offer_2">
+					<img src="image/wine-2.jpg">
+				</div>
+			</div>
+			<div class="col-12 col-sm-4">
+				<div class="image_1 offer_2">
+					<img src="image/wine-5.jpg">
+				</div>
+				<div class="image_1 offer_5">
+					<img src="image/wine-3.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="container p_70">
+		<div class="header">
+			Trending-Products
+		</div>
+	<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home">Featured</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile">New Products</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact">Contact</a>
+  </li>
+</ul>
+
+<div class="tab-content" id="myTabContent">
+	
+  		<div class="tab-pane fade show active" id="home">
+  			<div class="container">
+	  			<div class="row no-gutters">			
+					<div class="col-10 offset-1 col-sm-12 offset-sm-0">
+						<div class="owl-carousel owl-theme product_theme">
+							<div class="item">	
+								<div class="product_img">
+									<a>
+										<div  class="product_img_1">
+											<img src="image/product-1.jpg">
+												<div class="image_set_1">
+													<img src="image/product-5.jpg" class="peta_image_set_1">
+														<div class="button_bg">
+															<div class="main_button_1">
+																<button class="button_1">
+																</button>
+															</div>
+															<div class="main_button_2">
+																<button class="button_2">
+																</buttton>
+															</div>
+															<div class="main_button_3">
+																<button class="button_3">
+																</buttton>
+															</div>
+															<div class="main_button_4">
+																<button class="button_4">
+																</buttton>
+															</div>
+														</div>
+												</div>
+											</div>
+									</a>
+									<div class="new_product">
+										New
+									</div>
+							
+									<div class="main_new_product">
+										<div class="product_dec">
+											<a href="#">
+					       						eligendi optiome cumque
+					       					</a>
+					       				</div>
+					       				<div class="spcial_price">
+					       					<span class="price">$20.87</span>
+					       					<span class="sale">-8%</span>
+					       					<span class="regular_price">$22.68</span>
+					       				</div>
+					       			</div>
+					       		</div>
+							</div>
+							<div class="item">	
+								<div class="product_img">
+									
+										<div  class="product_img_1">
+											<img src="image/product-2.jpg">
+												<div class="image_set_1">
+													<img src="image/product-6.jpg" class="peta_image_set_1">
+														<div class="button_bg">
+															<div class="main_button_1">
+																<button class="button_1">
+																</button>
+															</div>
+															<div class="main_button_2">
+																<button class="button_2">
+																</buttton>
+															</div>
+															<div class="main_button_3">
+																<button class="button_3">
+																</buttton>
+															</div>
+															<div class="main_button_4">
+																<button class="button_4">
+																</buttton>
+															</div>
+														</div>
+												</div>
+										</div>
+										
+									
+									<div class="new_product">
+										New
+									</div>
+							
+									<div class="main_new_product">
+										<div class="product_dec">
+											<a href="#">
+					       						eligendi optiome cumque
+					       					</a>
+					       				</div>
+					       				<div class="spcial_price">
+					       					<span class="price">$20.87</span>
+					       					<span class="sale">-8%</span>
+					       					<span class="regular_price">$22.68</span>
+					       				</div>
+					       			</div>
+					       		</div>
+							</div>
+							<div class="item">	
+								<div class="product_img">
+									
+										<div  class="product_img_1">
+											<img src="image/product-3.jpg">
+												<div class="image_set_1">
+													<img src="image/product-7.jpg" class="peta_image_set_1">
+														<div class="button_bg">
+															<div class="main_button_1">
+																<button class="button_1">
+																</button>
+															</div>
+															<div class="main_button_2">
+																<button class="button_2">
+																</buttton>
+															</div>
+															<div class="main_button_3">
+																<button class="button_3">
+																</buttton>
+															</div>
+															<div class="main_button_4">
+																<button class="button_4">
+																</buttton>
+															</div>
+														</div>
+												</div>
+										</div>
+										
+									
+									<div class="new_product">
+										New
+									</div>
+							
+									<div class="main_new_product">
+										<div class="product_dec">
+											<a href="#">
+					       						eligendi optiome cumque
+					       					</a>
+					       				</div>
+					       				<div class="spcial_price">
+					       					<span class="price">$20.87</span>
+					       					<span class="sale">-8%</span>
+					       					<span class="regular_price">$22.68</span>
+					       				</div>
+					       			</div>
+					       		</div>
+							</div>
+							<div class="item">	
+								<div class="product_img">
+									
+										<div  class="product_img_1">
+											<img src="image/product-4.jpg">
+												<div class="image_set_1">
+													<img src="image/product-8.jpg" class="peta_image_set_1">
+														<div class="button_bg">
+															<div class="main_button_1">
+																<button class="button_1">
+																</button>
+															</div>
+															<div class="main_button_2">
+																<button class="button_2">
+																</buttton>
+															</div>
+															<div class="main_button_3">
+																<button class="button_3">
+																</buttton>
+															</div>
+															<div class="main_button_4">
+																<button class="button_4">
+																</buttton>
+															</div>
+														</div>
+												</div>
+										</div>
+										
+									
+									<div class="new_product">
+										New
+									</div>
+							
+									<div class="main_new_product">
+										<div class="product_dec">
+											<a href="#">
+					       						eligendi optiome cumque
+					       					</a>
+					       				</div>
+					       				<div class="spcial_price">
+					       					<span class="price">$20.87</span>
+					       					<span class="sale">-8%</span>
+					       					<span class="regular_price">$22.68</span>
+					       				</div>
+					       			</div>
+					       		</div>
+							</div>
+							<div class="item">	
+								<div class="product_img">
+									
+										<div  class="product_img_1">
+											<img src="image/product-1.jpg">
+												<div class="image_set_1">
+													<img src="image/product-5.jpg" class="peta_image_set_1">
+														<div class="button_bg">
+															<div class="main_button_1">
+																<button class="button_1">
+																</button>
+															</div>
+															<div class="main_button_2">
+																<button class="button_2">
+																</buttton>
+															</div>
+															<div class="main_button_3">
+																<button class="button_3">
+																</buttton>
+															</div>
+															<div class="main_button_4">
+																<button class="button_4">
+																</buttton>
+															</div>
+														</div>
+												</div>
+										</div>
+										
+									
+									<div class="new_product">
+										New
+									</div>
+							
+									<div class="main_new_product">
+										<div class="product_dec">
+											<a href="#">
+					       						eligendi optiome cumque
+					       					</a>
+					       				</div>
+					       				<div class="spcial_price">
+					       					<span class="price">$20.87</span>
+					       					<span class="sale">-8%</span>
+					       					<span class="regular_price">$22.68</span>
+					       				</div>
+					       			</div>
+					       		</div>
+							</div>
+							<div class="item">	
+								<div class="product_img">
+									
+										<div  class="product_img_1">
+											<img src="image/product-2.jpg">
+												<div class="image_set_1">
+													<img src="image/product-6.jpg" class="peta_image_set_1">
+														<div class="button_bg">
+															<div class="main_button_1">
+																<button class="button_1">
+																</button>
+															</div>
+															<div class="main_button_2">
+																<button class="button_2">
+																</buttton>
+															</div>
+															<div class="main_button_3">
+																<button class="button_3">
+																</buttton>
+															</div>
+															<div class="main_button_4">
+																<button class="button_4">
+																</buttton>
+															</div>
+														</div>
+												</div>
+										</div>
+										
+									
+									<div class="new_product">
+										New
+									</div>
+							
+									<div class="main_new_product">
+										<div class="product_dec">
+											<a href="#">
+					       						eligendi optiome cumque
+					       					</a>
+					       				</div>
+					       				<div class="spcial_price">
+					       					<span class="price">$20.87</span>
+					       					<span class="sale">-8%</span>
+					       					<span class="regular_price">$22.68</span>
+					       				</div>
+					       			</div>
+					       		</div>
+							</div>
+							<div class="item">	
+								<div class="product_img">
+									
+										<div  class="product_img_1">
+											<img src="image/product-3.jpg">
+												<div class="image_set_1">
+													<img src="image/product-7.jpg" class="peta_image_set_1">
+														<div class="button_bg">
+															<div class="main_button_1">
+																<button class="button_1">
+																</button>
+															</div>
+															<div class="main_button_2">
+																<button class="button_2">
+																</buttton>
+															</div>
+															<div class="main_button_3">
+																<button class="button_3">
+																</buttton>
+															</div>
+															<div class="main_button_4">
+																<button class="button_4">
+																</buttton>
+															</div>
+														</div>
+												</div>
+										</div>
+										
+								
+									<div class="new_product">
+										New
+									</div>
+							
+									<div class="main_new_product">
+										<div class="product_dec">
+											<a href="#">
+					       						eligendi optiome cumque
+					       					</a>
+					       				</div>
+					       				<div class="spcial_price">
+					       					<span class="price">$20.87</span>
+					       					<span class="sale">-8%</span>
+					       					<span class="regular_price">$22.68</span>
+					       				</div>
+					       			</div>
+					       		</div>
+							</div>
+							<div class="item">	
+								<div class="product_img">
+									
+										<div  class="product_img_1">
+											<img src="image/product-4.jpg">
+												<div class="image_set_1">
+													<img src="image/product-8.jpg" class="peta_image_set_1">
+														<div class="button_bg">
+															<div class="main_button_1">
+																<button class="button_1">
+																</button>
+															</div>
+															<div class="main_button_2">
+																<button class="button_2">
+																</buttton>
+															</div>
+															<div class="main_button_3">
+																<button class="button_3">
+																</buttton>
+															</div>
+															<div class="main_button_4">
+																<button class="button_4">
+																</buttton>
+															</div>
+														</div>
+												</div>
+
+										</div>
+																
+									<div class="new_product">
+										New
+									</div>
+							
+									<div class="main_new_product">
+										<div class="product_dec">
+											<a href="#">
+					       						eligendi optiome cumque
+					       					</a>
+					       				</div>
+					       				<div class="spcial_price">
+					       					<span class="price">$20.87</span>
+					       					<span class="sale">-8%</span>
+					       					<span class="regular_price">$22.68</span>
+					       				</div>
+					       			</div>
+					       		</div>
+							</div>	
+				
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="tab-pane fade" id="profile" >
+		  	<div class="container">
+	  			<div class="row no-gutters">			
+					<div class="col-10 offset-1 col-sm-12 offset-sm-0">
+						<div class="owl-carousel owl-theme product_theme">
+							<div class="item">	
+								<div class="product_img">
+									<a>
+										<div  class="product_img_1">
+											<img src="image/product-1.jpg">
+												<div class="image_set_1">
+													<img src="image/product-5.jpg" class="peta_image_set_1">
+														<div class="button_bg">
+															<div class="main_button_1">
+																<button class="button_1">
+																</button>
+															</div>
+															<div class="main_button_2">
+																<button class="button_2">
+																</buttton>
+															</div>
+															<div class="main_button_3">
+																<button class="button_3">
+																</buttton>
+															</div>
+															<div class="main_button_4">
+																<button class="button_4">
+																</buttton>
+															</div>
+														</div>
+												</div>
+											</div>
+									</a>
+									<div class="new_product">
+										New
+									</div>
+							
+									<div class="main_new_product">
+										<div class="product_dec">
+											<a href="#">
+					       						eligendi optiome cumque
+					       					</a>
+					       				</div>
+					       				<div class="spcial_price">
+					       					<span class="price">$20.87</span>
+					       					<span class="sale">-8%</span>
+					       					<span class="regular_price">$22.68</span>
+					       				</div>
+					       			</div>
+					       		</div>
+							</div>
+							<div class="item">	
+								<div class="product_img">
+									
+										<div  class="product_img_1">
+											<img src="image/product-2.jpg">
+												<div class="image_set_1">
+													<img src="image/product-6.jpg" class="peta_image_set_1">
+														<div class="button_bg">
+															<div class="main_button_1">
+																<button class="button_1">
+																</button>
+															</div>
+															<div class="main_button_2">
+																<button class="button_2">
+																</buttton>
+															</div>
+															<div class="main_button_3">
+																<button class="button_3">
+																</buttton>
+															</div>
+															<div class="main_button_4">
+																<button class="button_4">
+																</buttton>
+															</div>
+														</div>
+												</div>
+										</div>
+										
+									
+									<div class="new_product">
+										New
+									</div>
+							
+									<div class="main_new_product">
+										<div class="product_dec">
+											<a href="#">
+					       						eligendi optiome cumque
+					       					</a>
+					       				</div>
+					       				<div class="spcial_price">
+					       					<span class="price">$20.87</span>
+					       					<span class="sale">-8%</span>
+					       					<span class="regular_price">$22.68</span>
+					       				</div>
+					       			</div>
+					       		</div>
+							</div>
+							<div class="item">	
+								<div class="product_img">
+									
+										<div  class="product_img_1">
+											<img src="image/product-3.jpg">
+												<div class="image_set_1">
+													<img src="image/product-7.jpg" class="peta_image_set_1">
+														<div class="button_bg">
+															<div class="main_button_1">
+																<button class="button_1">
+																</button>
+															</div>
+															<div class="main_button_2">
+																<button class="button_2">
+																</buttton>
+															</div>
+															<div class="main_button_3">
+																<button class="button_3">
+																</buttton>
+															</div>
+															<div class="main_button_4">
+																<button class="button_4">
+																</buttton>
+															</div>
+														</div>
+												</div>
+										</div>
+										
+									
+									<div class="new_product">
+										New
+									</div>
+							
+									<div class="main_new_product">
+										<div class="product_dec">
+											<a href="#">
+					       						eligendi optiome cumque
+					       					</a>
+					       				</div>
+					       				<div class="spcial_price">
+					       					<span class="price">$20.87</span>
+					       					<span class="sale">-8%</span>
+					       					<span class="regular_price">$22.68</span>
+					       				</div>
+					       			</div>
+					       		</div>
+							</div>
+							<div class="item">	
+								<div class="product_img">
+									
+										<div  class="product_img_1">
+											<img src="image/product-4.jpg">
+												<div class="image_set_1">
+													<img src="image/product-8.jpg" class="peta_image_set_1">
+														<div class="button_bg">
+															<div class="main_button_1">
+																<button class="button_1">
+																</button>
+															</div>
+															<div class="main_button_2">
+																<button class="button_2">
+																</buttton>
+															</div>
+															<div class="main_button_3">
+																<button class="button_3">
+																</buttton>
+															</div>
+															<div class="main_button_4">
+																<button class="button_4">
+																</buttton>
+															</div>
+														</div>
+												</div>
+										</div>
+										
+									
+									<div class="new_product">
+										New
+									</div>
+							
+									<div class="main_new_product">
+										<div class="product_dec">
+											<a href="#">
+					       						eligendi optiome cumque
+					       					</a>
+					       				</div>
+					       				<div class="spcial_price">
+					       					<span class="price">$20.87</span>
+					       					<span class="sale">-8%</span>
+					       					<span class="regular_price">$22.68</span>
+					       				</div>
+					       			</div>
+					       		</div>
+							</div>
+							<div class="item">	
+								<div class="product_img">
+									
+										<div  class="product_img_1">
+											<img src="image/product-1.jpg">
+												<div class="image_set_1">
+													<img src="image/product-5.jpg" class="peta_image_set_1">
+														<div class="button_bg">
+															<div class="main_button_1">
+																<button class="button_1">
+																</button>
+															</div>
+															<div class="main_button_2">
+																<button class="button_2">
+																</buttton>
+															</div>
+															<div class="main_button_3">
+																<button class="button_3">
+																</buttton>
+															</div>
+															<div class="main_button_4">
+																<button class="button_4">
+																</buttton>
+															</div>
+														</div>
+												</div>
+										</div>
+										
+									
+									<div class="new_product">
+										New
+									</div>
+							
+									<div class="main_new_product">
+										<div class="product_dec">
+											<a href="#">
+					       						eligendi optiome cumque
+					       					</a>
+					       				</div>
+					       				<div class="spcial_price">
+					       					<span class="price">$20.87</span>
+					       					<span class="sale">-8%</span>
+					       					<span class="regular_price">$22.68</span>
+					       				</div>
+					       			</div>
+					       		</div>
+							</div>
+							<div class="item">	
+								<div class="product_img">
+									
+										<div  class="product_img_1">
+											<img src="image/product-2.jpg">
+												<div class="image_set_1">
+													<img src="image/product-6.jpg" class="peta_image_set_1">
+														<div class="button_bg">
+															<div class="main_button_1">
+																<button class="button_1">
+																</button>
+															</div>
+															<div class="main_button_2">
+																<button class="button_2">
+																</buttton>
+															</div>
+															<div class="main_button_3">
+																<button class="button_3">
+																</buttton>
+															</div>
+															<div class="main_button_4">
+																<button class="button_4">
+																</buttton>
+															</div>
+														</div>
+												</div>
+										</div>
+										
+									
+									<div class="new_product">
+										New
+									</div>
+							
+									<div class="main_new_product">
+										<div class="product_dec">
+											<a href="#">
+					       						eligendi optiome cumque
+					       					</a>
+					       				</div>
+					       				<div class="spcial_price">
+					       					<span class="price">$20.87</span>
+					       					<span class="sale">-8%</span>
+					       					<span class="regular_price">$22.68</span>
+					       				</div>
+					       			</div>
+					       		</div>
+							</div>
+							<div class="item">	
+								<div class="product_img">
+									
+										<div  class="product_img_1">
+											<img src="image/product-3.jpg">
+												<div class="image_set_1">
+													<img src="image/product-7.jpg" class="peta_image_set_1">
+														<div class="button_bg">
+															<div class="main_button_1">
+																<button class="button_1">
+																</button>
+															</div>
+															<div class="main_button_2">
+																<button class="button_2">
+																</buttton>
+															</div>
+															<div class="main_button_3">
+																<button class="button_3">
+																</buttton>
+															</div>
+															<div class="main_button_4">
+																<button class="button_4">
+																</buttton>
+															</div>
+														</div>
+												</div>
+										</div>
+										
+								
+									<div class="new_product">
+										New
+									</div>
+							
+									<div class="main_new_product">
+										<div class="product_dec">
+											<a href="#">
+					       						eligendi optiome cumque
+					       					</a>
+					       				</div>
+					       				<div class="spcial_price">
+					       					<span class="price">$20.87</span>
+					       					<span class="sale">-8%</span>
+					       					<span class="regular_price">$22.68</span>
+					       				</div>
+					       			</div>
+					       		</div>
+							</div>
+							<div class="item">	
+								<div class="product_img">
+									
+										<div  class="product_img_1">
+											<img src="image/product-4.jpg">
+												<div class="image_set_1">
+													<img src="image/product-8.jpg" class="peta_image_set_1">
+														<div class="button_bg">
+															<div class="main_button_1">
+																<button class="button_1">
+																</button>
+															</div>
+															<div class="main_button_2">
+																<button class="button_2">
+																</buttton>
+															</div>
+															<div class="main_button_3">
+																<button class="button_3">
+																</buttton>
+															</div>
+															<div class="main_button_4">
+																<button class="button_4">
+																</buttton>
+															</div>
+														</div>
+												</div>
+
+										</div>
+																
+									<div class="new_product">
+										New
+									</div>
+							
+									<div class="main_new_product">
+										<div class="product_dec">
+											<a href="#">
+					       						eligendi optiome cumque
+					       					</a>
+					       				</div>
+					       				<div class="spcial_price">
+					       					<span class="price">$20.87</span>
+					       					<span class="sale">-8%</span>
+					       					<span class="regular_price">$22.68</span>
+					       				</div>
+					       			</div>
+					       		</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="tab-pane fade" id="contact" >
+		  	<div class="container">
+	  			<div class="row no-gutters">			
+					<div class="col-10 offset-1 col-sm-12 offset-sm-0">
+						<div class="owl-carousel owl-theme product_theme">
+							<div class="item">	
+								<div class="product_img">
+									<a>
+										<div  class="product_img_1">
+											<img src="image/product-1.jpg">
+												<div class="image_set_1">
+													<img src="image/product-5.jpg" class="peta_image_set_1">
+														<div class="button_bg">
+															<div class="main_button_1">
+																<button class="button_1">
+																</button>
+															</div>
+															<div class="main_button_2">
+																<button class="button_2">
+																</buttton>
+															</div>
+															<div class="main_button_3">
+																<button class="button_3">
+																</buttton>
+															</div>
+															<div class="main_button_4">
+																<button class="button_4">
+																</buttton>
+															</div>
+														</div>
+												</div>
+											</div>
+									</a>
+									<div class="new_product">
+										New
+									</div>
+							
+									<div class="main_new_product">
+										<div class="product_dec">
+											<a href="#">
+					       						eligendi optiome cumque
+					       					</a>
+					       				</div>
+					       				<div class="spcial_price">
+					       					<span class="price">$20.87</span>
+					       					<span class="sale">-8%</span>
+					       					<span class="regular_price">$22.68</span>
+					       				</div>
+					       			</div>
+					       		</div>
+							</div>
+							<div class="item">	
+								<div class="product_img">
+									
+										<div  class="product_img_1">
+											<img src="image/product-2.jpg">
+												<div class="image_set_1">
+													<img src="image/product-6.jpg" class="peta_image_set_1">
+														<div class="button_bg">
+															<div class="main_button_1">
+																<button class="button_1">
+																</button>
+															</div>
+															<div class="main_button_2">
+																<button class="button_2">
+																</buttton>
+															</div>
+															<div class="main_button_3">
+																<button class="button_3">
+																</buttton>
+															</div>
+															<div class="main_button_4">
+																<button class="button_4">
+																</buttton>
+															</div>
+														</div>
+												</div>
+										</div>
+										
+									
+									<div class="new_product">
+										New
+									</div>
+							
+									<div class="main_new_product">
+										<div class="product_dec">
+											<a href="#">
+					       						eligendi optiome cumque
+					       					</a>
+					       				</div>
+					       				<div class="spcial_price">
+					       					<span class="price">$20.87</span>
+					       					<span class="sale">-8%</span>
+					       					<span class="regular_price">$22.68</span>
+					       				</div>
+					       			</div>
+					       		</div>
+							</div>
+							<div class="item">	
+								<div class="product_img">
+									
+										<div  class="product_img_1">
+											<img src="image/product-3.jpg">
+												<div class="image_set_1">
+													<img src="image/product-7.jpg" class="peta_image_set_1">
+														<div class="button_bg">
+															<div class="main_button_1">
+																<button class="button_1">
+																</button>
+															</div>
+															<div class="main_button_2">
+																<button class="button_2">
+																</buttton>
+															</div>
+															<div class="main_button_3">
+																<button class="button_3">
+																</buttton>
+															</div>
+															<div class="main_button_4">
+																<button class="button_4">
+																</buttton>
+															</div>
+														</div>
+												</div>
+										</div>
+										
+									
+									<div class="new_product">
+										New
+									</div>
+							
+									<div class="main_new_product">
+										<div class="product_dec">
+											<a href="#">
+					       						eligendi optiome cumque
+					       					</a>
+					       				</div>
+					       				<div class="spcial_price">
+					       					<span class="price">$20.87</span>
+					       					<span class="sale">-8%</span>
+					       					<span class="regular_price">$22.68</span>
+					       				</div>
+					       			</div>
+					       		</div>
+							</div>
+							<div class="item">	
+								<div class="product_img">
+									
+										<div  class="product_img_1">
+											<img src="image/product-4.jpg">
+												<div class="image_set_1">
+													<img src="image/product-8.jpg" class="peta_image_set_1">
+														<div class="button_bg">
+															<div class="main_button_1">
+																<button class="button_1">
+																</button>
+															</div>
+															<div class="main_button_2">
+																<button class="button_2">
+																</buttton>
+															</div>
+															<div class="main_button_3">
+																<button class="button_3">
+																</buttton>
+															</div>
+															<div class="main_button_4">
+																<button class="button_4">
+																</buttton>
+															</div>
+														</div>
+												</div>
+										</div>
+										
+									
+									<div class="new_product">
+										New
+									</div>
+							
+									<div class="main_new_product">
+										<div class="product_dec">
+											<a href="#">
+					       						eligendi optiome cumque
+					       					</a>
+					       				</div>
+					       				<div class="spcial_price">
+					       					<span class="price">$20.87</span>
+					       					<span class="sale">-8%</span>
+					       					<span class="regular_price">$22.68</span>
+					       				</div>
+					       			</div>
+					       		</div>
+							</div>
+							<div class="item">	
+								<div class="product_img">
+									
+										<div  class="product_img_1">
+											<img src="image/product-1.jpg">
+												<div class="image_set_1">
+													<img src="image/product-5.jpg" class="peta_image_set_1">
+														<div class="button_bg">
+															<div class="main_button_1">
+																<button class="button_1">
+																</button>
+															</div>
+															<div class="main_button_2">
+																<button class="button_2">
+																</buttton>
+															</div>
+															<div class="main_button_3">
+																<button class="button_3">
+																</buttton>
+															</div>
+															<div class="main_button_4">
+																<button class="button_4">
+																</buttton>
+															</div>
+														</div>
+												</div>
+										</div>
+										
+									
+									<div class="new_product">
+										New
+									</div>
+							
+									<div class="main_new_product">
+										<div class="product_dec">
+											<a href="#">
+					       						eligendi optiome cumque
+					       					</a>
+					       				</div>
+					       				<div class="spcial_price">
+					       					<span class="price">$20.87</span>
+					       					<span class="sale">-8%</span>
+					       					<span class="regular_price">$22.68</span>
+					       				</div>
+					       			</div>
+					       		</div>
+							</div>
+							<div class="item">	
+								<div class="product_img">
+									
+										<div  class="product_img_1">
+											<img src="image/product-2.jpg">
+												<div class="image_set_1">
+													<img src="image/product-6.jpg" class="peta_image_set_1">
+														<div class="button_bg">
+															<div class="main_button_1">
+																<button class="button_1">
+																</button>
+															</div>
+															<div class="main_button_2">
+																<button class="button_2">
+																</buttton>
+															</div>
+															<div class="main_button_3">
+																<button class="button_3">
+																</buttton>
+															</div>
+															<div class="main_button_4">
+																<button class="button_4">
+																</buttton>
+															</div>
+														</div>
+												</div>
+										</div>
+										
+									
+									<div class="new_product">
+										New
+									</div>
+							
+									<div class="main_new_product">
+										<div class="product_dec">
+											<a href="#">
+					       						eligendi optiome cumque
+					       					</a>
+					       				</div>
+					       				<div class="spcial_price">
+					       					<span class="price">$20.87</span>
+					       					<span class="sale">-8%</span>
+					       					<span class="regular_price">$22.68</span>
+					       				</div>
+					       			</div>
+					       		</div>
+							</div>
+							<div class="item">	
+								<div class="product_img">
+									
+										<div  class="product_img_1">
+											<img src="image/product-3.jpg">
+												<div class="image_set_1">
+													<img src="image/product-7.jpg" class="peta_image_set_1">
+														<div class="button_bg">
+															<div class="main_button_1">
+																<button class="button_1">
+																</button>
+															</div>
+															<div class="main_button_2">
+																<button class="button_2">
+																</buttton>
+															</div>
+															<div class="main_button_3">
+																<button class="button_3">
+																</buttton>
+															</div>
+															<div class="main_button_4">
+																<button class="button_4">
+																</buttton>
+															</div>
+														</div>
+												</div>
+										</div>
+										
+								
+									<div class="new_product">
+										New
+									</div>
+							
+									<div class="main_new_product">
+										<div class="product_dec">
+											<a href="#">
+					       						eligendi optiome cumque
+					       					</a>
+					       				</div>
+					       				<div class="spcial_price">
+					       					<span class="price">$20.87</span>
+					       					<span class="sale">-8%</span>
+					       					<span class="regular_price">$22.68</span>
+					       				</div>
+					       			</div>
+					       		</div>
+							</div>
+							<div class="item">	
+								<div class="product_img">
+									
+										<div  class="product_img_1">
+											<img src="image/product-4.jpg">
+												<div class="image_set_1">
+													<img src="image/product-8.jpg" class="peta_image_set_1">
+														<div class="button_bg">
+															<div class="main_button_1">
+																<button class="button_1">
+																</button>
+															</div>
+															<div class="main_button_2">
+																<button class="button_2">
+																</buttton>
+															</div>
+															<div class="main_button_3">
+																<button class="button_3">
+																</buttton>
+															</div>
+															<div class="main_button_4">
+																<button class="button_4">
+																</buttton>
+															</div>
+														</div>
+												</div>
+
+										</div>
+																
+									<div class="new_product">
+										New
+									</div>
+							
+									<div class="main_new_product">
+										<div class="product_dec">
+											<a href="#">
+					       						eligendi optiome cumque
+					       					</a>
+					       				</div>
+					       				<div class="spcial_price">
+					       					<span class="price">$20.87</span>
+					       					<span class="sale">-8%</span>
+					       					<span class="regular_price">$22.68</span>
+					       				</div>
+					       			</div>
+					       		</div>
+							</div>	
+				
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+		
+
+
+</div>
+
+	<div class=" p_70 clearfix">
+		<div class="wine_1996">
+			<div class="container">
+				<div class="main_layer">
+					<div class="owl-carousel owl-theme main_wine_1996">
+						<div class="item">
+							<div class="layer_1">
+								<div class="wabout_1">
+									<div class="wine_text">Wine</div>
+									<div class="text_2">1996</div>
+									<div class="text_3">Gruchone</div>
+								</div>
+								<div class="wrapper_1">
+									<img src="image/parel-x-1.jpg">
+								</div>
+								<div class="decription">
+									<p>
+									Lorem ipsum dolor sit amet, cons onlectus. Donec cursus est tortor Vivamud. Vivamus eleifend.
+									</p>
+								</div>
+								<div class="button_1_1">
+										<button><a href="#">Read More!</a></button>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="layer_3">
+								<div class="wabout_2">
+									<div>2019</div>
+									<div>siraz wine</div>
+									<div>brand</div>
+								</div>
+								<div class="wrapper_3">
+								<img src="image/parel-x-3.jpg">
+								</div>
+								<div class="wa_price_3">
+									$20.00
+								</div>
+								<div class="button_1_1">
+										<button><a href="#">Shop Now</a></button>
+								</div>
+							</div> 
+						</div>
+						<div class="item">
+							<div class="layer_2">
+								<div class="wrapper_2">
+								<img src="image/parel-x-2.jpg">
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>	
+	</div>
+
+
+<div class="container p_70">
+	<div class="row no-gutters">
+		<div class="col-12">
+			<div class="subbanner">
+				<img src="image/subbanner-1.jpg">
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="p_70">
+	<div class="background">
+		<div class="container"> 
+			<div class="owl-carousel owl-theme client">
+				 <div class="item">	
+				 	<div class="client_user">
+				 			<div class="client_image">
+				 				<img src="image/user1.jpg">
+				 			</div>
+				 			<div class="client_title">miss. Jenny inan</div>
+							<div class="client_subtitle">- Web Designer</div>
+							<div class="client_dec">
+								"there are many variation of passeges of lorem ipsum availbale,but the majority have suffered alteration in some form, by injected humouran domised, words which don't look even slightly belivable..."
+							</div>
+				 	</div>
+				</div>
+				 <div class="item">	
+				 	<div class="client_user">
+				 			<div class="client_image">
+				 				<img src="image/user2.jpg">
+				 			</div>
+				 			<div class="client_title">miss. Jenny inan</div>
+							<div class="client_subtitle">- Web Designer</div>
+							<div class="client_dec">
+								"there are many variation of passeges of lorem ipsum availbale,but the majority have suffered alteration in some form, by injected humouran domised, words which don't look even slightly belivable..."
+							</div>
+				 	</div>
+				</div>
+				 <div class="item">	
+				 	<div class="client_user">
+				 			<div class="client_image">
+				 				<img src="image/user3.jpg">
+				 			</div>
+				 			<div class="client_title">miss. Jenny inan</div>
+							<div class="client_subtitle">- Web Designer</div>
+							<div class="client_dec">
+								"there are many variation of passeges of lorem ipsum availbale,but the majority have suffered alteration in some form, by injected humouran domised, words which don't look even slightly belivable..."
+							</div>
+				 	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		<div class="container p_70">
+				<div class="header">
+					Latest News
+				</div>
+					<div>
+						<div class="owl-carousel owl-theme latest_news">
+					 		<div class="item">
+					 			<div class="blog_post">
+					 				<div class="main_blog_content">
+					 					<button class="blog_icon"><i class="fas fa-search b_icon"></i></button>
+					 					<div class="blog_image"><img src="image/5-home-default.jpg"></div>
+					 					<div class="main_blog_layer"></div>
+					 				</div>
+					 				<div class="blog_content"> 
+					 					<div class="blog_1">Viderer voluptatum te eum</div>
+					 					<div class="blog_2">Read More > </div>
+					 					<div class="blog_3"><i class="fas fa-eye"></i> view  (7)</div>
+					 				</div>
+					 			</div>
+					 		</div>
+					 		<div class="item">
+					 			<div class="blog_post">
+					 				<div class="main_blog_content">
+					 						<button class="blog_icon"><i class="fas fa-search b_icon"></i></button>
+					 					<div class="blog_image"><img src="image/4-home-default.jpg"></div>
+					 					<div class="main_blog_layer"></div>
+					 				</div>
+					 				<div class="blog_content"> 
+					 					<div class="blog_1">Viderer voluptatum te eum</div>
+					 					<div class="blog_2">Read More > </div>
+					 					<div class="blog_3"><i class="fas fa-eye"></i> view  (7)</div>
+					 				</div>
+					 			</div>
+					 		</div>
+					 		<div class="item">
+					 			<div class="blog_post">
+					 				<div class="main_blog_content">
+					 					<button class="blog_icon"><i class="fas fa-search b_icon"></i></button>
+					 					<div class="blog_image"><img src="image/3-home-default.jpg"></div>
+					 					<div class="main_blog_layer"></div>
+					 				</div>
+					 				<div class="blog_content"> 
+					 					<div class="blog_1">Viderer voluptatum te eum</div>
+					 					<div class="blog_2">Read More > </div>
+					 					<div class="blog_3"><i class="fas fa-eye"></i> view  (7)</div>
+					 				</div>
+					 			</div>
+					 		</div>
+					 		<div class="item">
+					 			<div class="blog_post">
+					 				<div class="main_blog_content">
+					 						<button class="blog_icon"><i class="fas fa-search b_icon"></i></button>
+					 					<div class="blog_image"><img src="image/1-home-default.jpg"></div>
+					 					<div class="main_blog_layer"></div>
+					 				</div>
+					 				<div class="blog_content"> 
+					 					<div class="blog_1">Viderer voluptatum te eum</div>
+					 					<div class="blog_2">Read More > </div>
+					 					<div class="blog_3"><i class="fas fa-eye"></i> view  (7)</div>
+					 				</div>
+					 			</div>
+					 		</div>
+					 		<div class="item">
+					 			<div class="blog_post">
+					 				<div class="main_blog_content">
+					 					<button class="blog_icon"><i class="fas fa-search b_icon"></i></button>
+					 					<div class="blog_image"><img src="image/2-home-default.jpg"></div>
+					 					<div class="main_blog_layer"></div>
+					 				</div>
+					 				<div class="blog_content"> 
+					 					<div class="blog_1">Viderer voluptatum te eum</div>
+					 					<div class="blog_2">Read More > </div>
+					 					<div class="blog_3"><i class="fas fa-eye"></i> view  (7)</div>
+					 				</div>
+					 			</div>
+					 		</div>
+						</div>
+					</div>
+		
+		</div>
+
+
+		<div class="container main_brand_image p_70">
+			<div class="owl-carousel owl-theme brand_image">
+				<div class="item">
+					<img src="image/1.jpg">
+				</div>
+				<div class="item">
+					<img src="image/2.jpg">
+				</div>
+				<div class="item">
+					<img src="image/3.jpg">
+				</div>
+				<div class="item">
+					<img src="image/4.jpg">
+				</div>
+				<div class="item">
+					<img src="image/5.jpg">
+				</div>
+				<div class="item">
+					<img src="image/6.jpg">
+				</div>
+				<div class="item">
+					<img src="image/7.jpg">
+				</div>
+				<div class="item">
+					<img src="image/8.jpg">
+				</div>
+			</div>
+		</div>
+
+
+		<div class="footer">
+			<div class="container">
+				<div class="footer_top">
+					<div class="mob_footer_top">
+						<div class="row no-gutters">
+								<div class="col-lg-6 col-12">
+									<div class="main_wa_content"> 
+										<div class="wa_content">
+											<div class="block_title">
+												<h3>sign up for newsletter</h3>
+											</div>
+										</div>
+										<div class="wa_dec">
+											LIpsum simple text Lorem text simpl Duis faucibus enim vitae nun
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6 col-12">
+									<div class="wa_subscribe">
+										<div class="wa_button">
+											<input type="email" name="" class="email"  placeholder="Your email address">
+											<button>Subscribe</button>
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+
+
+				<div class="footer_grid center_footer">
+					<div class="row no-gutters">
+						<div class="col-lg-3 col-12">
+							<div class="logo_img"><img src="image/logo.png"></div>
+							<div class="footer_dec">
+								Donec vitae purus nunc. Morbi amet congue mattis fring dapibus erat ut. Donec vitae purus nunc.
+							</div>
+						</div>	
+
+						
+						<div class="col-lg-3 col-12">
+							<div class="footer_1">
+								<h3 class="products_foo">Products<i class="fas fa-plus plus_icon_1"></i></h3>
+								<div class="wrapper_links_1">
+									<ul>
+										<li><i class='material-icons footer_icon'>chevron_right</i><a href="#">Products</a></li>
+										<li><i class='material-icons footer_icon'>chevron_right</i><a href="#">new products</a></li>
+										<li><i class='material-icons footer_icon'>chevron_right</i><a href="#">best sales</a></li>
+										<li><i class='material-icons footer_icon'>chevron_right</i><a href="#">Sitmap</a></li>
+										<li><i class='material-icons footer_icon'>chevron_right</i><a href="#">Stores</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>	
+
+						<div class="col-lg-3 col-12">
+							<div class="footer_1">
+								<h3 class="products_foo">Your Account<i class="fas fa-plus plus_icon_1"></i></h3>
+								<div class="wrapper_links_1">
+									<ul>
+										<li><i class='material-icons footer_icon'>chevron_right</i><a href="#">Personal info</a></li>
+										<li><i class='material-icons footer_icon'>chevron_right</i><a href="#">Orders</a></li>
+										<li><i class='material-icons footer_icon'>chevron_right</i><a href="#">Credit Slips</a></li>
+										<li><i class='material-icons footer_icon'>chevron_right</i><a href="#">Addresses</a></li>
+										<li><i class='material-icons footer_icon'>chevron_right</i><a href="#">My Wishlists</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>	
+
+						<div class="col-lg-3 col-12">
+							<div class="footer_1">
+								<h3 class="products_foo">Store Information<i class="fas fa-plus plus_icon_1"></i></h3>
+								<div class="wrapper_links_1">
+									<ul>
+										<li><i class='material-icons foo_i'>location_on</i><a href="#">Demo Store <br>United Kingdom</a></li>
+										<li><i class='material-icons footer_icon_1'>phone</i><a href="#">(00) 1234 567891</a></li>
+										<li><i class='material-icons footer_icon_1'>phone</i><a href="#">0123-456-7890</a></li>
+										<li><i class='material-icons footer_icon_1'>email</i><a href="#"><c>demo@demo.com</c></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+																					
+
+				<div class="bottom_footer">
+					<div>
+						<div class="footer_text">
+             			<a href="#"> © 2019 - Ecommerce software by PrestaShop™</a>
+            			</div>
+            			<div class="block_social">
+            				<ul>
+            					<li class="facebook">
+            						<a href="#"></a>
+            					</li>
+            					<li class="twitter">
+            						<a href="#"></a>
+            					</li>
+            					<li class="rss">
+            						<a href="#"></a>
+            					</li>
+            					<li class="youtube">
+            						<a href="#"></a>
+            					</li>
+            					<li class="google_plus">
+            						<a href="#"></a>
+            					</li>
+            					<li class="pinterest">
+            						<a href="#"></a>
+            					</li>
+            					<li class="vimeo">
+            						<a href="#"></a>
+            					</li>
+            					<li class="instagram">
+            						<a href="#"></a>
+            					</li>
+            				</ul>
+            			</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+<div class="">
+	<button></button>
+</div>
+
+
+</body>
+</html>
